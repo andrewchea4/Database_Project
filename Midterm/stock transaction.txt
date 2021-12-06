@@ -1,0 +1,11 @@
+SELECT d_next_oid INTO :o_id
+FROM District
+WHERE d_w_id = :w_id AND d_id = :d_id;
+
+SELECT COUNT(DISTINCT (s_i_id)) INTO :stock_count
+FROM Order-Line, Stock
+WHERE
+ol_w_id = :w_id AND
+ol_d_id = :d_id AND oLo_id < :o_id AND
+oLo_id >= (:o_id - 20) s_w_id = :w_id AND
+s_i_id = oL_i_id AND s_quantity < :threshold;

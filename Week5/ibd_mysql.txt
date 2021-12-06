@@ -1,0 +1,23 @@
+sudo ./cal-free-space-from-ibd-4k ~/DBProject/mysql-5.7.33/datadir/tpcc/item.ibd result_item_end.txt
+sudo ./cal-free-space-percentile-from-parsed-file-4k space-summary.txt parsed-result_item_end.txt
+
+sudo ./cal-free-space-from-ibd-4k ~/DBProject/mysql-5.7.33/datadir/tpcc/district.ibd result_district_end.txt
+sudo ./cal-free-space-percentile-from-parsed-file-4k space-summary.txt parsed-result_district_end.txt
+
+sudo ./cal-free-space-from-ibd-4k ~/DBProject/mysql-5.7.33/datadir/tpcc/order_line.ibd result_order_line_end.txt
+sudo ./cal-free-space-percentile-from-parsed-file-4k space-summary.txt parsed-result_order_line_end.txt
+
+sudo ./cal-free-space-from-ibd-4k ~/DBProject/mysql-5.7.33/datadir/tpcc/stock.ibd result_stock_end.txt
+sudo ./cal-free-space-percentile-from-parsed-file-4k space-summary.txt parsed-result_stock_end.txt
+
+sudo ./cal-free-space-from-ibd-4k ~/DBProject/mysql-5.7.33/datadir/tpcc/customer.ibd result_customer_end.txt
+sudo ./cal-free-space-percentile-from-parsed-file-4k space-summary.txt parsed-result_customer_end.txt
+
+sudo ./cal-free-space-from-ibd-4k ~/DBProject/mysql-5.7.33/datadir/tpcc/history.ibd result_history_end.txt
+sudo ./cal-free-space-percentile-from-parsed-file-4k space-summary.txt parsed-result_history_end.txt
+
+sudo ./cal-free-space-from-ibd-4k ~/DBProject/mysql-5.7.33/datadir/tpcc/new_orders.ibd new_orders_end.txt
+sudo ./cal-free-space-percentile-from-parsed-file-4k space-summary.txt parsed-result_new_orders_end.txt
+
+sudo ./cal-free-space-from-ibd-4k ~/DBProject/mysql-5.7.33/datadir/tpcc/orders.ibd result_orders_end.txt
+sudo ./cal-free-space-percentile-from-parsed-file-4k space-summary.txt parsed-result_orders_end.txt

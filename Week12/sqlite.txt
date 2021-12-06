@@ -1,0 +1,83 @@
+default mode
+real	0m1.477s
+user	0m0.013s
+sys	0m0.763s
+
+journal_mode : off
+real	0m0.405s
+user	0m0.012s
+sys	0m0.376s
+journal_mode : delete
+real	0m1.630s
+user	0m0.020s
+sys	0m0.716s
+journal_mode : wal
+real	0m0.112s
+user	0m0.074s
+sys	0m0.037s
+
+page_cache size : 100
+real	0m1.450s
+user	0m0.011s
+sys	0m0.733s
+page_cache size : 500
+real	0m1.423s
+user	0m0.000s
+sys	0m0.747s
+page_cache size : 1000
+real	0m1.402s
+user	0m0.012s
+sys	0m0.697s
+page_cache size : 2000
+real	0m1.366s
+user	0m0.011s
+sys	0m0.750s
+
+page_size : 512
+real	0m1.559s
+user	0m0.019s
+sys	0m0.723s
+page_size : 1024
+real	0m1.590s
+user	0m0.008s
+sys	0m0.762s
+page_size : 2048
+real	0m1.508s
+user	0m0.008s
+sys	0m0.710s
+page_size : 4096
+real	0m1.647s
+user	0m0.012s
+sys	0m0.710s
+page_size : 8192
+real	0m1.553s
+user	0m0.017s
+sys	0m0.689s
+page_size : 16384
+real	0m1.582s
+user	0m0.004s
+sys	0m0.722s
+
+locking mode : normal
+real	0m1.384s
+user	0m0.004s
+sys	0m0.727s
+locking mode : exclusive
+real	0m0.605s
+user	0m0.000s
+sys	0m0.481s
+
+synchronous mode : 0
+real	0m0.218s
+user	0m0.104s
+sys	0m0.112s
+synchronous mode : 1
+real	0m1.540s
+user	0m0.029s
+sys	0m0.716s
+synchronous mode : 2
+real	0m1.827s
+user	0m0.008s
+sys	0m0.835s
+
+

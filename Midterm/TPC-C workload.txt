@@ -1,0 +1,19 @@
+OLTP란, 네트워크 상의 여러 이용자가 실시간으로 데이ㅏ터베이슫 ㅔ이터를 갱신하거나 조회하는 등의 단위작업을 처리하는 방식을 말한다.
+
+The workload specifies skew at the tuple level for three of the relations
+
+Stock relation: The stock level for each item at each warehouse is maintained
+Order relation: A permanent record of each order is maintained
+New-Order relation: pending orders are maintained and later deleted by a Delivery transaction
+Order-Line relation: An entry is made for each item ordered.
+
+New Order transaction: Places an order for on average 10 items from a warehouse, insert the order, and for each item updates the corresponding stock level.
+Payment transaction: Process a payment for a customer and updates balances and other data in the Warehouse, District and Customer relations.
+Order status relation: Returns the status of a customer's last order. (고객의 주문이 어떻게 처리되고 있는지 상태 확인을 처리하는 비지니스 트랜젝션)
+Delivery transaction: Processes orders corresponding to 10 pending orders, one for each district, with 10 items per order.
+Stock level transaction: Examines the quantity of stock for the itmes ordered by each of the last 20 orders in a district.
+
+Tuples accessed by the Order-status, Delivery, and Stock-Level transactions are more likely to be buffer pool hits since they are for tuples that have been recently put in the buffer pool
+by the New-Order transaction
+
+TPC-C benchmark assumes access to the tuples are skewed, within a relation some tuples are referenced more frequently than others.

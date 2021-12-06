@@ -1,0 +1,12 @@
+Space amplification : The ratio of the size of the database to the size of the data in the database
+Compression decreases space amplification. It is increased by fragmentatino with a B-Tree and old versions of rows with an LSM
+
+Write amplification : phenomenon that occurs in flash memory and SSDs in which the amount of data written to your memory device is greater thatn the amount of information that you 
+are actually trying to store.
+
+SSDs don't have mechanical erros, so it is reliable that HDDs. However, they do have a finite lifespan. 
+The lifespan of an SSD, and that of any kind of flash memory, is a function of how many program and erase cycels it can perform.
+Thus, write amplification can have a dramatic impact on the overall longevity of a storage device.
+
+-------- Why does write amplification occur ---------
+In, HDDs, new data can be written on top of existing data => SSD, existing data has to be erased to make room for new data. The erase porcess that occurs has a major role in write amplification
